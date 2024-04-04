@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import About from "../components/_Sections/About.astro";
+import { Experiences } from "../components/_Sections/Experiences";
+import Formations from '../components/_Sections/Formations.astro'
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <About />
+    <Experiences client:load/>
+    <Formations />
+  </main>
+</Layout>
+
+<style>
+  main {
+    max-width: 62rem;
+    margin: auto;
+    padding-top: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    main {
+     padding-top: 2rem;
+    }
+  }
+</style>

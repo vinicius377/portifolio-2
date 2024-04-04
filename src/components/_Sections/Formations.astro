@@ -1,0 +1,41 @@
+---
+import FormationCard from '../FormationCard.astro'
+import { Formation } from '../../typesFormation'
+
+const formations: Formation[] = [
+  {
+    title: 'Análise e desenvolvimento de sistemas',
+    status: 'done'
+  },
+  {
+    title: 'Técnico de informática',
+    status: 'done'
+  }
+] 
+---
+
+<section>
+  <h2>Formações</h2> 
+  <div class="card_grid">
+    {formations.map(formation => (
+      <FormationCard title={formation.title} status={formation.status} />
+    ))}
+  </div>
+</section>
+
+<style>
+  section {
+      margin-top: 3rem;
+    }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+  }
+</style>

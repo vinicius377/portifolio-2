@@ -1,0 +1,42 @@
+---
+import type { Formation } from '../types/Formation';
+
+const { title, status } = Astro.props as Formation
+
+const statusTitle = status === 'done' ? 'Concluído' : 'Andamento'
+---
+<div class="container">
+  <h4>{title}</h4>
+  <span class={status}>{statusTitle}<span>
+</div>
+
+<style>
+  .container {
+    padding: 0.75rem 0.5rem;
+    background-color: #44475a;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 15rem;
+  }
+
+  .container span {
+    font-size: 0.75rem;
+  }
+
+  .done {
+    color: #50FA7B
+  }
+
+  @media (max-width: 768px) {
+    .container h4 {
+      max-width: 100%;
+    } 
+  }
+</style>

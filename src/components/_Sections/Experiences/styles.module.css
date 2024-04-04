@@ -1,0 +1,23 @@
+.section {
+    margin-top: 3rem;
+  }
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience_grid {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .experience_grid {
+    flex-direction: column;
+  }
+
+  .section {
+    margin-top: 1.5rem;
+  }
+}
