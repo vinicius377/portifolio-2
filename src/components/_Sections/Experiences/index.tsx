@@ -11,7 +11,7 @@ const experiences: Experience[] = [
     id: 1,
     description: (
       <>
-        <h4>Front-end</h4>
+        <h4>FRONT END</h4>
         <p>
           Desenvolvimento de novas features tanto para a loja como para os
           sistemas operacionais da empresa. Algumas das tecnologias utilizadas
