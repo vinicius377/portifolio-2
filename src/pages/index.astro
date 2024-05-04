@@ -1,4 +1,6 @@
 ---
+import '../../app/globals.css'
+import Contacts from '../components/_Sections/Contacts.astro'
 import Layout from "../layouts/Layout.astro";
 import About from "../components/_Sections/About.astro";
 import { Experiences } from "../components/_Sections/Experiences";
@@ -10,6 +12,7 @@ import Formations from '../components/_Sections/Formations.astro'
     <About />
     <Experiences client:load/>
     <Formations />
+    <Contacts />
   </main>
 </Layout>
 
@@ -23,6 +26,12 @@ import Formations from '../components/_Sections/Formations.astro'
   @media (max-width: 768px) {
     main {
      padding-top: 2rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    main {
+     padding-top: 0;
     }
   }
 </style>

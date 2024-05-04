@@ -47,6 +47,7 @@ export function Experiences() {
       <div className={styles.experience_grid}>
         {experiences.map((experience) => (
           <Card
+            key={experience.id}
             id={experience.id}
             currentId={openedDetails}
             setOpenedDetails={setOpenedDetails}

@@ -33,7 +33,7 @@ export function Card({ experience, setOpenedDetails, id, currentId }: CardProps)
       className={styles.container}
       onMouseOver={() => clear()}
       onMouseLeave={() => onBlurContent()}
-      data-openedDetails={openedDetails}
+      data-openeddetails={openedDetails}
     >
       {openedDetails ? (
         <div className={styles.description} onBlur={() => onBlurContent()}>

@@ -1,0 +1,38 @@
+---
+import { Icon } from 'astro-icon/components'
+import Tooltip from '../ui/tooltip'
+---
+
+<section>
+  <Tooltip content='vinicius.500er'>
+    <a href="https://www.instagram.com/vinicius.500er/" target="_blank">
+      <Icon name='mdi:instagram'/>
+    </a>
+  </Tooltip>
+  <a href="mailto:viniciusep181@gmail.com" target="_blank">
+    <Icon name='mdi:gmail' />
+  </a>
+  <a href="https://www.linkedin.com/in/vinicius-aguiar11/" target="_blank">
+    <Icon name=mdi:linkedin />
+  </a>
+</section>
+
+<style>
+  section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  [data-icon] {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 400ms
+  }
+
+  [data-icon]:hover {
+    transform: scale(1.15)
+  }
+
+</style>
