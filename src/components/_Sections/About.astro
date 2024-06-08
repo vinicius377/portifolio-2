@@ -2,7 +2,6 @@
 import { Icon } from 'astro-icon/components'
 import filePath from '../../assets/cv.pdf'
 import Tooltip from '@/components/ui/tooltip'
-console.log(Tooltip)
 ---
 
 <section>
@@ -12,21 +11,21 @@ console.log(Tooltip)
   <div class="content">
     <header class="header">
       <div>
-       <h1>Vinicius Aguiar Silva</h1>
-       <span>Dev full-stack</span>
+       <h1 tabindex="0">Vinicius Aguiar Silva</h1>
+       <span tabindex="0">Dev full-stack</span>
       </div>
       <div class="actions">
         <Tooltip content='Baixar currículo'>
           <a href={filePath} download >
-            <Icon name='mdi:download'/>
+            <Icon name='mdi:download' aria-label="Baixar o curriculo"/>
           </a> 
         </Tooltip>
         <a href="https://github.com/vinicius377" target="_blank">
-          <Icon name='mdi:github' />
+          <Icon name='mdi:github' aria-label="Link para o Github"/>
         </a>
       </div>
     </header>
-    <p>
+    <p tabindex="0">
       Já trabalhei como desenvolvedor full-stack há 1 ano e 10 meses com foco no desenvolvimento web,
       em uma startup de hortifrúti. Sou técnico em informática e formado em análise e desenvolvimento
       de sistemas, desde 2023. Estou em busca de novas oportunidades para crescer profissionalmente e

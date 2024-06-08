@@ -6,8 +6,8 @@ const { title, status } = Astro.props as Formation
 const statusTitle = status === 'done' ? 'Concluído' : 'Andamento'
 ---
 
-<div class="container">
-  <h4>{title}</h4>
+<div tabindex="0" class="container">
+  <h2>{title}</h2>
   <span class={status}>{statusTitle}<span>
 </div>
 
@@ -22,7 +22,7 @@ const statusTitle = status === 'done' ? 'Concluído' : 'Andamento'
     max-width: calc(100vw - 4rem);
   }
 
-  .container h4 {
+  .container h2 {
     font-weight: 400;
     font-size: 1rem;
     max-width: 15rem;

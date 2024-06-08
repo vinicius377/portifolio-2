@@ -41,9 +41,10 @@ const experiences: Experience[] = [
 
 export function Experiences() {
   const [openedDetails, setOpenedDetails] = useState(0);
+
   return (
     <section className={styles.section}>
-      <h2 className={styles.title}>Experiências</h2>
+      <h2 tabIndex={0} className={styles.title}>Experiências</h2>
       <div className={styles.experience_grid}>
         {experiences.map((experience) => (
           <Card
