@@ -1,0 +1,46 @@
+---
+import newsoftwareGarcom from '../../assets/projects/newsoftware-garcom.png';
+import newsoftwareLanding from '../../assets/projects/newsoftware-landing.png'; 
+---
+
+<section>
+  <h2 tabindex="0">Projetos pessoais</h2>
+  <div class="grid">
+    <div class="grid-item">
+        <a href="https://garcom.newsoftwere.com.br/" target="_blank" rel="noreferrer">
+            <img src={newsoftwareGarcom.src} alt="newsoftware aplicação para garçons"/>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://newsoftwere.com.br/" target="_blank" rel="noreferrer">
+            <img src={newsoftwareLanding.src} alt="newsoftware landing page"/>
+        </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+      margin-top: 3rem;
+    }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    gap: 1rem
+  }
+
+  .grid-item {
+    height: 20rem;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+  }
+</style>

@@ -27,8 +27,7 @@ const TooltipContent = React.forwardRef<
 ))
 TooltipContent.displayName = TooltipPrimitive.Content.displayName
 
-export default function ToolipMount({content, children}: TooltipProps) {
-  console.log('content', content)
+export default function TooltipMount({content, children}: TooltipProps) {
   return (
     <TooltipProvider>
       <Tooltip>
